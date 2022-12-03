@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+main(){
+    char nama[30], nim[10];
+    int nilai;
+    printf("====================================================\n");
+    printf("\tBahasa C untuk menghitung grade Mahasiswa UBL\n");
+    printf("====================================================\n\n");
+    printf("\tInput Nama = "); scanf("%s",nama);
+    printf("\tInput Nim = "); scanf("%s",nim);
+    printf("\tInput Nilai Akhir Anda : "); scanf("%d", &nilai);
+
+    if(nilai>=76 && nilai<=100)
+      printf("\t\n\n NAMA : %s \t\n NIM : %s \t\n Nilai Akhir : %d \t\n Grade A",nama,nim,nilai);
+    else if(nilai>=66 && nilai<76)
+      printf("\t\n\n NAMA : %s \t\n NIM : %s \t\n Nilai Akhir : %d \t\n Grade B",nama,nim,nilai);
+    else if(nilai>=51 && nilai<66)
+      printf("\t\n\n NAMA : %s \t\n NIM : %s \t\n Nilai Akhir : %d \t\n Grade C",nama,nim,nilai);
+    else if(nilai>=0 && nilai<51)
+      printf("\t\n\n NAMA : %s \t\n NIM : %s \t\n Nilai Akhir : %d \t\n Grade D",nama,nim,nilai);
+}
